@@ -112,7 +112,7 @@ fun saveSingleFile(
     }
 
     val intent = Intent(Intent.ACTION_CREATE_DOCUMENT)
-    intent.putExtra(Intent.EXTRA_TITLE, saveFileNamePrefix)
+    intent.putExtra(Intent.EXTRA_TITLE, saveFileName)
     if (localOnly) {
         intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true)
     }
